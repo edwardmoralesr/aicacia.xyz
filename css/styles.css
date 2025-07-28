@@ -61,6 +61,8 @@ body {
   max-width: 900px;
   margin: 100px auto 40px;
   padding: 0 20px;
+  text-align: center;
+  align-items: center;
 }
 
 /* Responsive */
@@ -85,4 +87,30 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Fade-in desde abajo */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar la animación al contenido */
+.fade-in-section {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
