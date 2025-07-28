@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fdfdfd;
@@ -64,6 +68,13 @@ body {
   text-align: center;
   align-items: center;
 }
+
+.nav-links a.active {
+    color: green;
+    font-weight: bold;
+    border-bottom: 2px solid green;
+    transition: all 0.3s ease;
+  }
 
 /* Responsive */
 @media (max-width: 768px) {
