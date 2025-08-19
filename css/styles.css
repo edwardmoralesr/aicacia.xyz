@@ -158,6 +158,38 @@ body {
   transform: translateY(-50%);
 }
 
+.sub-nav {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke; /* o el color que prefieras */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu:hover .sub-nav {
+  display: block;
+}
+
+.sub-nav li {
+  padding: 10px;
+}
+
+.sub-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.sub-nav li a:hover {
+  background-color: #eee;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
   .problemas-grid {
